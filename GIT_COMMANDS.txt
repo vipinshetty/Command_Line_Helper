@@ -8,7 +8,8 @@ GIT Commands
 
 git init
 
-git clone [Repository http link] 
+git clone git_user@[Repository http link] 
+then password will be asked at the time of getting connection
 
 2. Add file(s) to local repository
 
@@ -58,15 +59,25 @@ git log
 
 git show commit_name(get it from log result)
 
-5. Find the difference with respect to previous commit 
+5. Find the difference with respect to previous commit -- not clear
 
-git diff
+git diff ---- execute this command before adding changes files into staging area, mean to say before git add .
 
 6. check the status
 
 git status -s
 
-7. 
+7. Want to switch to priority issue, then can use stash command to save half done work seperatley
+
+git stash 
+
+8. Once issue fixed and to resume back to half done work then use
+
+git stash apply --- this will keep stashed entry in the cache
+git stash pop --- entry will be removed and changes will bring back
+
+9. 
+
 
 
 
