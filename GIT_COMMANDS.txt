@@ -1,0 +1,96 @@
+Pre Requisites 
+1. Create a repository in GIT or Bitbucket
+
+
+GIT Commands
+================================================================================================================
+1. Initialize a repository locally or import exsisting repository
+
+git init
+
+git clone [Repository http link] 
+
+2. Add file(s) to local repository
+
+git add [file_name(s) || .]
+
+3. Can update branch name at any time otherwise it will default master or main branch
+
+git branch -b myLearning
+
+4. Link local repository to central or remote one
+
+git remote add origin [Repository http link]
+
+5. commit files into local respository
+
+git commit -m "Pass message"
+
+6. Push committed changes into remote
+
+git push origin [local_branchname]
+
+================================================================================================================
+
+Frequently used other commands
+
+1. To switch from one branch to other
+
+git checkout [other_branch_name]
+
+2. To pull updates from same branch or other branch
+
+git pull 
+
+3. To see the history
+
+git log
+
+4. To see the history 
+
+git show commit_name(get it from log result)
+
+5. Find the difference with respect to previous commit 
+
+git diff
+
+6. check the status
+
+git status -s
+
+7. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
