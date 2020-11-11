@@ -1,8 +1,22 @@
-Pre Requisites 
-1. Create a repository in GIT or Bitbucket
+================================================================================================================
+Environment setup
+================================================================================================================
+1. Install GIT client and set following 
+	
+	git config --global user.name "XYZ Shetty"
+	git config --global user.email "skdhf@as.com"
+	git config --global color.ui true
+	git config --global core.editor vim
+	git config --global merge.tool vimdiff
+	git config --global core.autocrlf true
+	
+	once done see the configuration by using below command
+	git config --list
+	
+2. Create a repository in GIT Site or Bitbucket
 
-
-GIT Commands
+================================================================================================================
+GIT Basic Commands
 ================================================================================================================
 1. Initialize a repository locally or import exsisting repository
 
@@ -40,8 +54,8 @@ or else
 	git push 
 
 ================================================================================================================
-
 Frequently used other commands
+================================================================================================================
 
 1. To switch from one branch to other
 
@@ -76,20 +90,60 @@ git stash
 git stash apply --- this will keep stashed entry in the cache
 git stash pop --- entry will be removed and changes will bring back
 
-9. 
+9. To see the list of stashed records
+
+git stash list
 
 
+================================================================================================================
+Less used commands
+================================================================================================================
+
+1. To move file from one dir to other
+
+git mv file1.txt src/file/
 
 
+1. To rename a file into something else
 
+git add file1.txt
+git mv file1.txt src/file/file2.txt
+git commit -a -m "Added new file and renamed and committed"
 
+	git status -s
+	A file1.txt
+	R file1.txt −> file2.txt
 
+	-a === automatically helps to detect the changes
 
+3. Want to revert staged file(s)
 
+	git checkout HEAD --[file_name]
+	
 
+	git reset --soft HEAD~
+	cat .git/refs/heads/master
 
+4. To tag a commit to the current HEAD
 
+git tag -a 'Release_1_0' -m 'Tagged basic string operation code' HEAD
+git push origin tag Release_1_0
 
+5. create and apply patch 
+	commit the changes to local repository and then, use last commit id for patch
+	git format-patch -1 0001-Added-my_strcat-function.patch
+	
+	this will create some patch === example 0001-Added-my_strcat-function.patch
+	
+	git apply 0001-Added-my_strcat-function.patch
+	
+6. create new branch and push to remote repository
+	
+	git branch branch_name
+	git push --set-upstream origin branch_name
+	
+	
+7. 
 
 
 
