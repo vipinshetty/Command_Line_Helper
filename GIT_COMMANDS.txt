@@ -28,7 +28,15 @@ git commit -m "Pass message"
 
 6. Push committed changes into remote
 
-git push origin [local_branchname]
+if no upstream with the name of local branch then use below commond to create in remote repository
+		fatal: The current branch master has no upstream branch.
+		To push the current branch and set the remote as upstream, use
+
+		git push --set-upstream origin master
+
+or else 
+
+	git push 
 
 ================================================================================================================
 
